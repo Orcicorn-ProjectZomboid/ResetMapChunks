@@ -162,7 +162,7 @@ def main(user_config):
         print("ERROR: Region out of bounds")
         exit(2)
 
-    # Setup the Log file and start resetting
+    # Display some meta information about your selection
     log.timestamp()
     log.add_header(f"{config['regions'][selection]['name']}")
     log.add(f"> Region: {selection}")
@@ -175,6 +175,8 @@ def main(user_config):
             f" Chunk ({config['regions'][selection]['stop'][2]} x "
             f"{config['regions'][selection]['stop'][3]})")
     log.add_header("Reset Log")
+
+    # Reset the selected boundaries
     resetmap(log, config['path'],
              config['regions'][selection]['start'][0],
              config['regions'][selection]['start'][1],
