@@ -1,0 +1,84 @@
+{
+    "path":             "/home/steam/Zomboid/Saves/Multiplayer/servertest",
+    "logs": {
+        "save":         true,
+        "path":         "/home/steam/logs/mapreset.log"
+    },
+    "regions": [
+        {
+            "name":     "Dixie Trailerpark (NE Muldraugh)",
+            "start":    [11432, 8776, 38, 29],
+            "stop":     [11971, 9000, 39, 30]
+        },
+        {
+            "name":     "Ekron",
+            "start":    [7055, 8142, 23, 27],
+            "stop":     [7526, 8582, 25, 28]
+        },
+        {
+            "name":     "Louisville",
+            "start":    [11838, 1045, 39, 3],
+            "stop":     [14465, 3971, 48, 13]
+        },
+        {
+            "name":     "Louisville Commerce",
+            "start":    [11925, 1116, 39, 3],
+            "stop":     [13893, 2183, 46, 7]
+        },
+        {
+            "name":     "Louisville Mall (Grand Ohio)",
+            "start":    [13484, 1211, 44, 4],
+            "stop":     [13783, 1497, 45, 4]
+        },
+        {
+            "name":     "March Ridge",
+            "start":    [9762, 12564, 32, 41],
+            "stop":     [10515, 13221, 35, 44]
+        },
+        {
+            "name":     "Muldraugh",
+            "start":    [10030, 8984, 32, 29],
+            "stop":     [11428, 10807, 38, 36]
+        },
+        {
+            "name":     "Muldraugh Trainyard",
+            "start":    [11423, 9543, 38, 41],
+            "stop":     [11982, 10428, 39, 34]
+        },
+        {
+            "name":     "Riverside",
+            "start":    [5583, 5013, 18, 16],
+            "stop":     [6940, 5639, 23, 18]
+        },
+        {
+            "name":     "Rosewood",
+            "start":     [7917, 11227, 26, 37],
+            "stop":      [8438, 11951, 28, 39]
+        },
+        {
+            "name":     "Rosewood Prison",
+            "start":    [7559, 11739, 25, 39],
+            "stop":     [7864, 12056, 26, 40]
+        },
+        {
+            "name":     "Trainyard",
+            "start":    [11449, 9546, 38, 31],
+            "stop":     [11980, 10422, 39, 34]
+        },
+        {
+            "name":     "Valley Station",
+            "start":    [12352, 4945, 41, 16],
+            "stop":     [12935, 6484, 43, 21]
+        },
+        {
+            "name":     "Valley Station Mall",
+            "start":    [13440, 5583, 44, 18],
+            "stop":     [14081, 6013, 46, 20]
+        },
+        {
+            "name":     "Westpoint",
+            "start":    [10762, 6515, 35, 21],
+            "stop":     [12209, 7160, 40, 23]
+        }
+    ]
+}
