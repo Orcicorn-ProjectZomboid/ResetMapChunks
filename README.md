@@ -77,3 +77,7 @@ When you run this script and choose a region **IT WILL PERMANENTLY DELETE
 Do not contact me if you mess up. This is on you.
 Turn back now, don't run this script if you are not 100% sure of what you
  are doing.
+
+## Credits
+
+Inspired and based loosely on [zomboidClearMap by Michaellaneous](https://github.com/Michaellaneous/zomboidClearMap/tree/master)
