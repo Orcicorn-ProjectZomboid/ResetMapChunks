@@ -1,9 +1,10 @@
 #!/usr/bin/python3
 """
 Provides a simplified interface to reset sections of a Zomboid Map
+Requires config.json for all configurations including your paths
 
 WRITTEN AND TESTED ON A LINUX DEDICATED SERVER.
-ADJUST FOR WINDOWS INCLUDING LINE 1, 114 AND 122
+ADJUST LINE 1 IF YOU ARE USING A DIFFERENT BINARY OR WINDOWS
 """
 
 # ----------------------------------------------------------------------
@@ -111,15 +112,18 @@ def resetmap(log, path,
                            startX, startY, endX, endY):
                 counter_map += 1
                 log.add(f"> Deleting {file}")
-                remove(f'{path}//{file}')
+                remove(join(path, file))
         # If not a map file, but actually meta data then if it's in chunk data
-        elif len(current_item) == 3 and \
-                (current_item[0] == 'chunkdata' or current_item[0] == 'zpop'):
+
+        # OLD METHOD: Trash chunkdata AND zombie population
+        #elif len(current_item) == 3 and (current_item[0] == 'chunkdata' or current_item[0] == 'zpop'):
+        # NEW METHOD: Don't delete zombie population to avoid multiplayer lag fest on regen
+        elif len(current_item) == 3 and current_item[0] == 'chunkdata':
             if in_boundary(current_item[1], current_item[2],
                            startChunkX, startChunkY, endChunkX, endChunkY):
                 counter_meta += 1
                 log.add(f"> Deleting {file}")
-                remove(f'{path}//{file}')
+                remove(join(path, file))
 
     log.add_header("Summary")
     log.add(f"> Completed in {(time() - timer_start):.2f} seconds")
