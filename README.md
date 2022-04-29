@@ -1,4 +1,4 @@
-# resetMapChunks
+# mapReset.py
 
 This very simple script allows you to delete portions of a Project Zomboid
  map by simply providing X,Y co-ordinates as well as chunk references.
