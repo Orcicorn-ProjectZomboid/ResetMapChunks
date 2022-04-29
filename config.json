@@ -36,6 +36,11 @@
             "stop":     [13874, 2032, 46, 6]
         },
         {
+            "name":     "Louisville Entrance (Military)",
+            "start":    [12447, 4204, 41, 14],
+            "stop":     [12597, 4339, 41, 14]
+        },
+        {
             "name":     "March Ridge",
             "start":    [9762, 12564, 32, 41],
             "stop":     [10515, 13221, 35, 44]
