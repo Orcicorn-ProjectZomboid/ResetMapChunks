@@ -57,13 +57,16 @@ This would definte the start of Muldraugh as 10030x8984 in Chunk 32x29 and
 
 ## Caveats
 
-This has been written and tested on Linux only. It will require a little
- tweaking to function correctly on windows primarily due to the difference
- between `\` and `/` in file paths. 
+This has been written and tested on Linxu only. It may require a little tweaking
+ to fuction correclty on windows.  Primarily due to the pathing differences
+ in file paths in config.json
 
-You can see this emphasized on `Line 1, 114 and 122` respectively. Eventually
- I may revisit this and adjust it automatically but for the time being you have
- been warned.
+In `mapreset.py` you will need to tweak line #1 to properly represent the
+ python binary location or remove it entirely.
+
+In `config.json` you will need to change your save file paths and if on
+ windows, use double-slashes for paths.  For example `C:\Users\JSmith` should
+ be written as `C:\\Users\\JSmith`
 
 ## !!! WARNING !!!
 
